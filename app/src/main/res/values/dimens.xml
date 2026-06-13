@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="key_height">48dp</dimen>
+    <dimen name="key_min_width">32dp</dimen>
+    <dimen name="key_gap">4dp</dimen>
+    <dimen name="key_corner_radius">12dp</dimen>
+    <dimen name="key_text_size">18sp</dimen>
+    <dimen name="special_key_text_size">14sp</dimen>
+    <dimen name="keyboard_padding">4dp</dimen>
+
+    <dimen name="toolbar_height">40dp</dimen>
+    <dimen name="suggestion_bar_height">36dp</dimen>
+    <dimen name="emoji_size">28sp</dimen>
+    <dimen name="emoji_grid_spacing">4dp</dimen>
+
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_xlarge">24dp</dimen>
+
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">24sp</dimen>
+    <dimen name="text_size_title">28sp</dimen>
+</resources>

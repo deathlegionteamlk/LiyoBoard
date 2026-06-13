@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="key_styles">
+        <item>Rounded</item>
+        <item>Sharp</item>
+        <item>Circle</item>
+        <item>Pill</item>
+        <item>Minimal</item>
+        <item>Material</item>
+        <item>iOS</item>
+        <item>Neumorphic</item>
+    </string-array>
+</resources>

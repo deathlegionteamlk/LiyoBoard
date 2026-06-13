@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="com.deathlegion.liyoboard.settings.MainActivity"
+    android:supportsSwitchingToNextInputMethod="true">
+
+    <subtype
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeLocale="en_US"
+        android:label="@string/subtype_en_US"
+        android:icon="@mipmap/ic_launcher" />
+
+    <subtype
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeLocale="si_LK"
+        android:label="@string/subtype_si_LK"
+        android:icon="@mipmap/ic_launcher" />
+
+    <subtype
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeLocale="ta_LK"
+        android:label="@string/subtype_ta_LK"
+        android:icon="@mipmap/ic_launcher" />
+
+    <subtype
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeLocale="ta_IN"
+        android:label="@string/subtype_ta_IN"
+        android:icon="@mipmap/ic_launcher" />
+
+</input-method>

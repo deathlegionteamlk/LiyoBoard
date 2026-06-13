@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1E1E2E"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tv_theme_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_theme_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A0A0C0"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+    <!-- Keyboard Preview -->
+    <LinearLayout
+        android:id="@+id/preview_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/preview_key_1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Q"
+                android:layout_margin="2dp"
+                app:cornerRadius="12dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/preview_key_2"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="W"
+                android:layout_margin="2dp"
+                app:cornerRadius="12dp" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/preview_space_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Space"
+            android:layout_margin="2dp"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/preview_enter_key"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Enter"
+            android:layout_marginTop="2dp"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/preview_special_key"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Shift"
+            android:layout_marginTop="2dp"
+            app:cornerRadius="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

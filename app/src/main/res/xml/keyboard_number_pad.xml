@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Number pad layout placeholder -->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="33%p"
+    android:keyHeight="48dp"
+    android:horizontalGap="4dp"
+    android:verticalGap="4dp">
+</Keyboard>

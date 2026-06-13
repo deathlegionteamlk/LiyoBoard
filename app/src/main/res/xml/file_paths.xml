@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="themes" path="themes/" />
+    <files-path name="extensions" path="extensions/" />
+    <files-path name="fonts" path="fonts/" />
+    <cache-path name="cache" path="." />
+</paths>

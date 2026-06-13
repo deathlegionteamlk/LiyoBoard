@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LiyoBoard</string>
+    <string name="ime_name">LiyoBoard Keyboard</string>
+    <string name="spell_checker_name">LiyoBoard Spell Checker (Coming Soon)</string>
+
+    <!-- Subtype labels -->
+    <string name="subtype_en_US">English (US)</string>
+    <string name="subtype_si_LK">සිංහල (Sinhala)</string>
+    <string name="subtype_ta_LK">தமிழ் (Sri Lanka)</string>
+    <string name="subtype_ta_IN">தமிழ் (India)</string>
+
+    <!-- Navigation -->
+    <string name="nav_themes">Themes</string>
+    <string name="nav_fonts">Fonts</string>
+    <string name="nav_clipboard">Clipboard</string>
+    <string name="nav_extensions">Extensions</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about">About</string>
+
+    <!-- Settings -->
+    <string name="select_language">Select Language</string>
+    <string name="haptic_feedback">Haptic Feedback</string>
+    <string name="sound_feedback">Sound Feedback</string>
+    <string name="clipboard_history">Clipboard History</string>
+    <string name="auto_capitalization">Auto-capitalization</string>
+    <string name="keyboard_height">Keyboard Height</string>
+    <string name="key_height">Key Height</string>
+    <string name="long_press_delay">Long Press Delay</string>
+
+    <!-- Theme Editor -->
+    <string name="theme_editor">Theme Editor</string>
+    <string name="keyboard_bg_color">Keyboard Background</string>
+    <string name="key_bg_color">Key Background</string>
+    <string name="key_text_color">Key Text Color</string>
+    <string name="accent_color">Accent Color</string>
+    <string name="corner_radius">Corner Radius</string>
+    <string name="key_style">Key Style</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="save_theme">Save Theme</string>
+    <string name="preview_theme">Preview</string>
+    <string name="export_theme">Export/Share</string>
+    <string name="select_font">Select Font</string>
+
+    <!-- Font Browser -->
+    <string name="font_browser">Font Browser</string>
+    <string name="fonts_count">500+ Fonts</string>
+    <string name="apply_font">Apply Font</string>
+    <string name="font_preview">Font Preview</string>
+    <string name="custom_text">Custom Text</string>
+    <string name="font_size">Font Size</string>
+
+    <!-- Clipboard -->
+    <string name="clipboard_manager">Clipboard Manager</string>
+    <string name="search_clipboard">Search clipboard…</string>
+    <string name="clear_all">Clear All</string>
+    <string name="pinned">Pinned</string>
+    <string name="no_clipboard_items">No clipboard items yet</string>
+
+    <!-- Extension Store -->
+    <string name="extension_store">Add-on Store</string>
+    <string name="import_extension">Import Extension</string>
+    <string name="export_extension">Export/Share</string>
+    <string name="uninstall">Uninstall</string>
+
+    <!-- About -->
+    <string name="about_title">About LiyoBoard</string>
+    <string name="about_team">Death Legion Team</string>
+    <string name="about_privacy">Privacy First - No data leaves your device</string>
+    <string name="about_opensource">Open Source</string>
+    <string name="about_beta">Beta Release v1.0.0-beta1</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome">Welcome to LiyoBoard</string>
+    <string name="onboarding_privacy">Privacy First</string>
+    <string name="onboarding_features">Features</string>
+    <string name="onboarding_enable">Enable Keyboard</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="enable_keyboard">Enable Keyboard</string>
+
+    <!-- Privacy -->
+    <string name="privacy_statement">LiyoBoard never connects to the internet. Your data stays on your device.</string>
+    <string name="no_internet_permission">This app does NOT request INTERNET permission.</string>
+</resources>

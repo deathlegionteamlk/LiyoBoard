@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1E1E2E"
+    android:padding="16dp">
+
+    <!-- Font Name -->
+    <TextView
+        android:id="@+id/tv_font_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Preview Text -->
+    <TextView
+        android:id="@+id/tv_font_preview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#E0E0E0"
+        android:textSize="24sp"
+        android:lineSpacingExtra="8dp"
+        android:layout_marginTop="16dp"
+        android:scrollbars="vertical" />
+
+    <!-- Custom Text Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2D2D44">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_custom_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type to preview..."
+            android:textColor="#E0E0E0"
+            android:textColorHint="#A0A0C0" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Font Size Slider -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size:"
+            android:textColor="#A0A0C0"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/seek_font_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:max="72"
+            android:progress="24" />
+
+        <TextView
+            android:id="@+id/tv_font_size_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24sp"
+            android:textColor="#E0E0E0"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Apply Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_apply_font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply Font to Keyboard"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

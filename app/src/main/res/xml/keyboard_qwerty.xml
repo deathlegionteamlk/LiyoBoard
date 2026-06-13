@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder for QWERTY keyboard layout - programmatically defined -->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:keyHeight="48dp"
+    android:horizontalGap="4dp"
+    android:verticalGap="4dp">
+    <!-- Rows are built programmatically in LiyoBoardIME.kt -->
+</Keyboard>

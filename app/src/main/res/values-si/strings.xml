@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Sinhala strings -->
+    <string name="app_name">ලියෝබෝඩ්</string>
+    <string name="ime_name">ලියෝබෝඩ් යතුරු පුවරුව</string>
+    <string name="subtype_si_LK">සිංහල</string>
+    <string name="subtype_en_US">English (US)</string>
+    <string name="subtype_ta_LK">தமிழ்</string>
+    <string name="nav_themes">තේමා</string>
+    <string name="nav_fonts">අකුරු</string>
+    <string name="nav_clipboard">ක්ලිප්බෝඩ්</string>
+    <string name="nav_extensions">දිගු</string>
+    <string name="nav_settings">සැකසුම්</string>
+    <string name="nav_about">පිළිබඳව</string>
+    <string name="select_language">භාෂාව තෝරන්න</string>
+    <string name="haptic_feedback">කම්පන ප්‍රතිචාරය</string>
+    <string name="privacy_statement">ලියෝබෝඩ් කිසිදිනෙක අන්තර්ජාලයට සම්බන්ධ නොවේ. ඔබගේ දත්ත ඔබගේ උපාංගයේම රැඳේ.</string>
+</resources>

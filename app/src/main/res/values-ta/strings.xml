@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tamil strings -->
+    <string name="app_name">லியோபோர்டு</string>
+    <string name="ime_name">லியோபோர்டு விசைப்பலகை</string>
+    <string name="subtype_ta_LK">தமிழ் (இலங்கை)</string>
+    <string name="subtype_ta_IN">தமிழ் (இந்தியா)</string>
+    <string name="subtype_en_US">English (US)</string>
+    <string name="subtype_si_LK">සිංහල</string>
+    <string name="nav_themes">கருப்பொருள்கள்</string>
+    <string name="nav_fonts">எழுத்துருக்கள்</string>
+    <string name="nav_clipboard">கிளிப்போர்டு</string>
+    <string name="nav_extensions">நீட்சிகள்</string>
+    <string name="nav_settings">அமைப்புகள்</string>
+    <string name="nav_about">பற்றி</string>
+    <string name="select_language">மொழியைத் தேர்வுசெய்க</string>
+    <string name="haptic_feedback">அதிர்வு கருத்து</string>
+    <string name="privacy_statement">லியோபோர்டு ஒருபோதும் இணையத்துடன் இணைக்காது. உங்கள் தரவு உங்கள் சாதனத்திலேயே இருக்கும்.</string>
+</resources>

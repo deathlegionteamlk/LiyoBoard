@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color Palette - Dark theme default -->
+    <color name="background_dark">#1E1E2E</color>
+    <color name="surface_dark">#2D2D44</color>
+    <color name="surface_variant_dark">#3D3D5C</color>
+    <color name="text_primary_dark">#E0E0E0</color>
+    <color name="text_secondary_dark">#A0A0C0</color>
+    <color name="accent_primary">#7C3AED</color>
+    <color name="accent_secondary">#CBA6F7</color>
+
+    <!-- Light theme -->
+    <color name="background_light">#F5F5F5</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_variant_light">#E0E0E0</color>
+    <color name="text_primary_light">#212121</color>
+    <color name="text_secondary_light">#757575</color>
+
+    <!-- Common -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="error">#FF5252</color>
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FFC107</color>
+
+    <!-- Brand -->
+    <color name="brand_primary">#7C3AED</color>
+    <color name="brand_secondary">#A855F7</color>
+    <color name="brand_gradient_start">#7C3AED</color>
+    <color name="brand_gradient_end">#A855F7</color>
+</resources>
