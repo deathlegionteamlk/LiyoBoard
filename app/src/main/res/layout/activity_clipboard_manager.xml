@@ -1,47 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#1E1E2E"
-    android:padding="16dp">
-
-    <!-- Search Bar -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="#2D2D44">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_search_clipboard"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Search clipboard..."
-            android:textColor="#E0E0E0"
-            android:textColorHint="#A0A0C0"
-            android:backgroundTint="#2D2D44" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!-- Clear All Button -->
-    <ImageButton
-        android:id="@+id/btn_clear_all"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_delete"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Clear All"
-        android:tint="#FF5252"
-        android:layout_gravity="end"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#1E1E2E" android:padding="16dp">
+    <EditText android:id="@+id/et_search_clipboard"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="Search clipboard..." android:textColor="#E0E0E0"
+        android:textColorHint="#A0A0C0" android:backgroundTint="#7C3AED"
         android:layout_marginBottom="8dp" />
-
-    <!-- Clipboard Items List -->
+    <ImageButton android:id="@+id/btn_clear_all"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete" android:contentDescription="Clear All"
+        android:layout_gravity="end" android:layout_marginBottom="8dp" />
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_clipboard"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:clipToPadding="false"
-        android:paddingBottom="8dp" />
-
+        android:id="@+id/rv_clipboard" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" />
 </LinearLayout>

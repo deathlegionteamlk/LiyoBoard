@@ -7,5 +7,4 @@
     android:gravity="center"
     android:padding="8dp"
     android:minHeight="44dp"
-    android:background="?attr/selectableItemBackground"
     android:textColor="#FFFFFF" />

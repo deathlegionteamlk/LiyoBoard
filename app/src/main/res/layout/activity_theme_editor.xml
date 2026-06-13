@@ -1,244 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1E1E2E"
-    android:fitsSystemWindows="true">
+    android:background="#1E1E2E">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#1E1E2E">
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:title="Theme Editor"
-            app:titleTextColor="#FFFFFF"
-            app:navigationIconTint="#FFFFFF" />
-    </com.google.android.material.appbar.AppBarLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Theme Editor" android:textColor="#FFFFFF" android:textSize="24sp"
+            android:textStyle="bold" android:layout_marginBottom="16dp" />
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <EditText android:id="@+id/et_theme_name"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Theme Name" android:textColor="#E0E0E0" android:textColorHint="#A0A0C0"
+            android:backgroundTint="#7C3AED" android:layout_marginBottom="16dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <!-- Theme Name -->
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_theme_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Theme Name"
-                    android:textColor="#E0E0E0"
-                    android:textColorHint="#A0A0C0" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <!-- Preview Area -->
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:cardCornerRadius="12dp"
-                app:cardBackgroundColor="#2D2D44"
-                android:layout_marginBottom="16dp">
-
-                <LinearLayout
-                    android:id="@+id/preview_keyboard_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:padding="8dp">
-
-                    <TextView
-                        android:text="Preview"
-                        android:textColor="#E0E0E0"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-
-            <!-- Color Buttons -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Colors"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
-
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:columnCount="3"
-                android:rowCount="2"
-                android:useDefaultMargins="true">
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_keyboard_bg_color"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:text="Keyboard BG"
-                    android:textSize="11sp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_key_bg_color"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:text="Key BG"
-                    android:textSize="11sp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_key_pressed_color"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:text="Key Pressed"
-                    android:textSize="11sp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_special_key_color"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:text="Special Key"
-                    android:textSize="11sp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_key_text_color"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:text="Key Text"
-                    android:textSize="11sp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_accent_color"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:text="Accent"
-                    android:textSize="11sp" />
-            </GridLayout>
-
-            <!-- Corner Radius -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Corner Radius"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp"
-                android:layout_marginTop="16dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
-
-                <SeekBar
-                    android:id="@+id/seek_corner_radius"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:max="30"
-                    android:progress="12" />
-
-                <TextView
-                    android:id="@+id/tv_corner_radius_value"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="12dp"
-                    android:textColor="#A0A0C0"
-                    android:textSize="14sp"
-                    android:layout_marginStart="8dp" />
-            </LinearLayout>
-
-            <!-- Key Style -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Key Style"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp"
-                android:layout_marginTop="8dp" />
-
-            <Spinner
-                android:id="@+id/spinner_key_style"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/key_styles"
-                android:layout_marginTop="4dp" />
-
-            <!-- Dark Mode Toggle -->
-            <com.google.android.material.switchmaterial.SwitchMaterial
-                android:id="@+id/switch_dark_mode"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Dark Mode"
-                android:textColor="#E0E0E0"
-                android:layout_marginTop="16dp" />
-
-            <!-- Font Selector -->
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_select_font"
-                style="@style/Widget.Material3.Button.OutlinedButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Select Font"
-                android:layout_marginTop="8dp" />
-
-            <!-- Action Buttons -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="16dp"
-                android:gravity="center">
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_preview_theme"
-                    style="@style/Widget.Material3.Button.OutlinedButton"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Preview"
-                    android:layout_marginEnd="4dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_save_theme"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Save"
-                    android:layout_marginStart="4dp" />
-            </LinearLayout>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_export_theme"
-                style="@style/Widget.Material3.Button.TextButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Export / Share Theme"
-                android:textColor="#7C3AED" />
-
+        <LinearLayout android:id="@+id/preview_keyboard_view"
+            android:layout_width="match_parent" android:layout_height="120dp"
+            android:orientation="vertical" android:gravity="center"
+            android:background="#2D2D44" android:padding="8dp"
+            android:layout_marginBottom="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Preview" android:textColor="#E0E0E0" />
         </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Colors" android:textColor="#FFFFFF" android:textSize="16sp"
+            android:textStyle="bold" android:layout_marginBottom="8dp" />
+
+        <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:columnCount="3" android:useDefaultMargins="true">
+            <Button android:id="@+id/btn_keyboard_bg_color" android:text="KB BG" android:textSize="11sp" />
+            <Button android:id="@+id/btn_key_bg_color" android:text="Key BG" android:textSize="11sp" />
+            <Button android:id="@+id/btn_key_pressed_color" android:text="Pressed" android:textSize="11sp" />
+            <Button android:id="@+id/btn_special_key_color" android:text="Special" android:textSize="11sp" />
+            <Button android:id="@+id/btn_key_text_color" android:text="Text" android:textSize="11sp" />
+            <Button android:id="@+id/btn_accent_color" android:text="Accent" android:textSize="11sp" />
+        </GridLayout>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Corner Radius" android:textColor="#FFFFFF" android:layout_marginTop="16dp" />
+        <SeekBar android:id="@+id/seek_corner_radius"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:max="30" android:progress="12" />
+        <TextView android:id="@+id/tv_corner_radius_value"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="12dp" android:textColor="#A0A0C0" />
+
+        <Spinner android:id="@+id/spinner_key_style"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:entries="@array/key_styles" android:layout_marginTop="8dp" />
+
+        <Switch android:id="@+id/switch_dark_mode"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Dark Mode" android:textColor="#E0E0E0" android:layout_marginTop="16dp" />
+
+        <Button android:id="@+id/btn_select_font"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Select Font" android:layout_marginTop="8dp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="16dp">
+            <Button android:id="@+id/btn_preview_theme"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Preview" android:layout_marginEnd="4dp" />
+            <Button android:id="@+id/btn_save_theme"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Save" android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <Button android:id="@+id/btn_export_theme"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Export / Share Theme" android:textColor="#7C3AED" />
+    </LinearLayout>
+</ScrollView>

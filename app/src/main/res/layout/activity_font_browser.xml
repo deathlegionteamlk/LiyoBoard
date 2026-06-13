@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#1E1E2E"
-    android:padding="16dp">
-
-    <!-- Category Chips -->
-    <com.google.android.material.chip.ChipGroup
-        android:id="@+id/chip_group_categories"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp" />
-
-    <!-- Font Grid -->
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#1E1E2E" android:padding="16dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Font Browser - 500+ Fonts" android:textColor="#FFFFFF"
+        android:textSize="24sp" android:textStyle="bold" android:layout_marginBottom="16dp" />
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <LinearLayout android:id="@+id/chip_group_categories"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_fonts"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:clipToPadding="false" />
-
+        android:id="@+id/rv_fonts" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" />
 </LinearLayout>
